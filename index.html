@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You</title>
+    <style>
+     :root {
+            --bg-deep-purple: #4a148c;   
+            --accent-purple: #7b1fa2;    
+            --light-purple: #f3e5f5;     
+            --text-dark: #212121;        
+        }
+      body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-purple);
+            background-image: linear-gradient(180deg, #ce93d8 0%, #b39ddb 100%); /* Adds a subtle color fade */
+            color: var(--text-dark);
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        /* This makes the navigation bar match the theme */
+        nav {
+            background: rgba(255, 255, 255, 0.9); /* Slightly see-through white */
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: var(--accent-purple);
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        header {
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white; /* Title will be white on the purple background */
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 5px;
+        }
+
+        .section {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 35px;
+            background: var(--card-white);
+            border-radius: 25px; /* Softer, rounder corners */
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+       .letter-card {
+        background: white;
+        padding: 30px;
+        margin-bottom: 40px; 
+        border-radius: 20px;
+        border-left: 10px solid #7b1fa2; 
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        
+        /* This line changes the font to typewriter style */
+        font-family: 'Courier New', Courier, monospace;
+        
+        line-height: 1.6;
+        color: #2d2d2d; /* Keeps the text dark and readable */
+    }
+
+        /* Photo Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+/* Music Section */
+        .music-container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        audio {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#letter">Letter</a>
+        <a href="#photos">Memories</a>
+        <a href="#music">Our Songs</a>
+    </nav>
+
+    <header id="home">
+        <h1>hi baby !!</h1>
+        <p>i made this space just for us. supposed to be for our 2nd but i decided to do a soft copy one :D (i'll still give the hard copy hehe)</p>
+    </header>
+
+<!-- MUSIC SECTION -->
+    <section id="music" class="section">
+        <h2 style="color: #7b1fa2; text-align: center;">Our Soundtrack</h2>
+        <div class="music-container" style="display: flex; justify-content: center; padding: 10px;">
+            
+            <!-- Taylor Swift - Wish List (Spotify Embed) -->
+            <iframe style="border-radius:12px" 
+                src="https://open.spotify.com/embed/track/2TEQvxxQabwLQMqWMg1qGu?utm_source=generator"
+                width="100%" 
+                height="152" 
+                frameBorder="0" 
+                allowfullscreen="" 
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                loading="lazy">
+            </iframe>
+
+        </div>
+        <p style="text-align: center; font-size: 0.9rem; color: #7b1fa2; margin-top: 10px;">
+            <i>Press play to listen while you read...</i>
+        </p>
+    </section>
+
+    <!-- LETTERS SECTION -->
+    <section id="letter" class="section">
+        <h2 style="color: var(--primary-purple);">these are some letters i made for our 2nd :) there's a hidden message :p</h2>
+
+        <!-- First Letter -->
+        <div class="letter" style="margin-bottom: 30px; border-radius: 15px; background: white; padding: 25px; border-left: 8px solid #7b1fa2; box-shadow: 0 10px 20px rgba(0,0,0,0.2);">
+            <strong>I thought I was safe...</strong><br>
+            My dearest, Rizzel,
+I thought I was safe from falling, but by the time I noticed, I was no longer standing on my own.
+
+You were with me — that’s the best part.
+
+At first, you were easy to be around, I didn't think twice about the way I smiled at your messages. I told myself "Wala lang to."
+
+It kept growing... In the way I started paying attention to the little details about you. The way the thought of you stayed longer that it should've.
+
+Then it hit me.
+
+I cared. More than I planned to.
+
+- ur bebi :)
+</div>
+     
+        <!-- Second Letter -->
+        <div class="letter" style="margin-bottom: 30px; border-radius: 15px; background: white; padding: 25px; border-left: 8px solid #7b1fa2; box-shadow: 0 10px 20px rgba(0,0,0,0.2);">
+            <strong>Learning you</strong><br>
+My dearest, Rizzel,
+Loving you means learning you everyday and that won't ever stop.
+
+I learn you in the way your mood changes slightly, in the way you go silent when you're thinking, in the way you respond, in the way your typings shorten when you're not in the mood, and your favorite stuffs and many more. It feels like a task that never ends. Something I don't get tired of.
+
+I hope to learn you forever, 'cause there still more of you to discover. :)
+
+- ur bebi :)
+        </div>
+     
+        <!-- Third Letter -->
+        <div class="letter" style="margin-bottom: 30px; border-radius: 15px; background: white; padding: 25px; border-left: 8px solid #7b1fa2; box-shadow: 0 10px 20px rgba(0,0,0,0.2);">
+            <strong>Only you can do this</strong><br>
+          My dearest, Rizzel,
+Only you can make me feel like this so effortlessly. I didn't expect it to be this easy.
+
+With you, nothing feels heavy. Being around you feels natural, like something I don't have to try to do.
+
+And that's what scares me sometimes. Because I've always thought feelings like this had to be complicated. You showed me that it can be steady and calm.
+
+Only you could do that. It's strange—in the best way possible.
+
+And maybe that's why this feels so real. It isn't forced nor rushed.
+
+I hope you realize how much you mean to me.
+
+- ur bebi :)
+        </div>
+
+        <!-- Fourth Letter -->
+        <div class="letter" style="margin-bottom: 30px; border-radius: 15px; background: white; padding: 25px; border-left: 8px solid #7b1fa2; box-shadow: 0 10px 20px rgba(0,0,0,0.2);">
+            <strong>Vulnerable is what I am when it comes to you</strong><br>
+            My dearest, Rizzel,
+Loving you made me softer in ways I didn't know.
+
+It's where things start to feel real. Loving you was about letting you see me too. It scared me somehow. I'm not used to open up, but with you, I felt this push to be real. I wanted you to know me.
+
+I didn't feel weak. It feels like relief. 
+I'm learning that it's okay to be seen.
+
+And that's all because of you.
+
+- ur bebi :)
+        </div>
+        
+        <!-- Fifth Letter -->
+        <div class="letter" style="margin-bottom: 30px; border-radius: 15px; background: white; padding: 25px; border-left: 8px solid #7b1fa2; box-shadow: 0 10px 20px rgba(0,0,0,0.2);">
+            <strong>Endurance</strong><br>
+            My dearest, Rizzel,
+As we said, we don't know what the future looks like for us, and that's hard to admit, but I know that what I feel isn't something temporary.
+
+There were days when things felt heavier than usual. Even when emotions felt complicated we still stayed. We communicated.
+
+I've seen how easy it is for people to leave things unresolved — but with us, there was always this effort.
+
+That's endurance.
+
+I think that's what makes what we have feel real.
+
+Endurance is a choice — To stay. To fix. To keep choosing each other. :)
+
+- ur bebi :)
+        </div>
+  
+        <!-- Sixth Letter -->
+        <div class="letter" style="margin-bottom: 30px; border-radius: 15px; background: white; padding: 25px; border-left: 8px solid #7b1fa2; box-shadow: 0 10px 20px rgba(0,0,0,0.2);">
+            <strong>Yours <3</strong><br>
+        My dearest, Rizzel,
+Something I never expected — to be yours. I don't think I ever planned nor decided it. It just happened. That's the greatest thing that ever happened to me.
+
+I remember the times I noticed how you naturally became someone my heart attached to. It's weirdly cool about realizing that someone can take up a place like without demanding it.
+
+When I think of you, I don't think of something temporary, because I want to be yours forever. ♡
+
+- ur bebi :)
+        </div>
+     
+        <!-- Seventh Letter -->
+        <div class="letter" style="margin-bottom: 30px; border-radius: 15px; background: white; padding: 25px; border-left: 8px solid #7b1fa2; box-shadow: 0 10px 20px rgba(0,0,0,0.2);">
+            <strong>Ordinary moments</strong><br>
+My dearest, Rizzel,
+I used to think love should feel overwhelming, dramatic, may grand moment ganon...
+
+Used to. Now those moments feel so normal and that's exactly what makes those moments special.
+
+Simple parts of our days that’s probably not special to others, but it is to me. I just need those small interactions, our conversations, simply our connection. Like when we talk about nothing and everything at the same time. Even on days when nothing exciting happens, we’re still connected.
+
+Ordinary moments with you feels enough.
+
+- ur bebi :)
+        </div>
+
+        <br> <!-- This adds a little space between letters -->
+
+        <!-- Eight Letter -->
+        <div class="letter" style="margin-bottom: 30px; border-radius: 15px; background: white; padding: 25px; border-left: 8px solid #7b1fa2; box-shadow: 0 10px 20px rgba(0,0,0,0.2);">
+            <strong>Understanding you</strong><br>
+My dearest, Rizzel,
+            You're aware of how understanding I am, and that's a personality I'll keep for you.
+
+Understanding you isn't just about knowing your hobbies or interests. It's about recognizing who you are and how to handle you. I think I've started doing that more than I used to - Not because I have to — but because I want to. It's about accepting that you're always going to be a little more than what I can explain.
+
+- ur bebi :)
+        </div>
+
+        <!-- Ninth Letter -->
+        <div class="letter" style="margin-bottom: 30px; border-radius: 15px; background: white; padding: 25px; border-left: 8px solid #7b1fa2; box-shadow: 0 10px 20px rgba(0,0,0,0.2);">
+            <strong>:)</strong><br>
+I love you always and forever, my dearest, zel. :)
+        </div>
+
+    </section>
+
+    <!-- PICTURES SECTION -->
+    <section id="photos" class="section">
+        <h2 style="color: var(--primary-purple);">Our Memories</h2>
+        <div class="gallery">
+            <!-- Replace the 'src' with your photo filenames -->
+            <img src="d015d5cf-2914-4c56-8a30-6289d77c12fb.jpg" alt="Memory 1">
+            <img src="03430b55-9411-42b6-818c-e6d483ddb915.jpg" alt="Memory 2">
+            <img src="26af3640-0f00-4cf9-a21b-c50c8472cf60.jpg" alt="Memory 3">
+            <img src="5bf4b48a-63f0-4de2-aedc-66e4cd527bd3.jpg" alt="Memory 4">
+            <img src="1aa4ef02-93f9-4077-bfa4-4f66ab756275.jpg" alt="Memory 5">
+            <img src="898127fc-a969-485d-aead-e2d229851279.jpg" alt="Memory 6">
+        </div>
+    </section>
+
+    <footer>
+        <p>Made with ❤️ by ur bebi :D</p>
+    </footer>
+
+</body>
+</html>
